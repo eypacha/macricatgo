@@ -57,8 +57,13 @@ function jugar(){
     llovio = 0;
     clima = setInterval(lluevenMacris,1000);
     
-    // NIVEL 2
-    if (nivel > 2){
+    // NIVEL 1
+    if (nivel == 1){
+    $("#nivel").css("display","block");
+    }
+    
+    // NIVEL 3
+    if (nivel == 3){
     $("#efectos").css("display","block");
     }
     
@@ -104,8 +109,6 @@ function pantalla(){
     $("#jugar").removeClass("bye");
     $("#nivel"+(nivel-1)).css("display","none");
     $("#nivel"+nivel).css("display","block");
-    $("#efectos").css("display","none");
-    $("#efectos").css("display","none");
     
     
 }
@@ -117,7 +120,6 @@ function macriHit(elemento){
     var vidas = $("#cat"+elemento).data("vidas");
     
     vidas--;
-    console.debug(vidas);
     $("#cat"+elemento).data("vidas",vidas);
     
     // Si es un gato de verdad
@@ -137,7 +139,12 @@ function macriHit(elemento){
             
              // ¿Terminó el nivel?
             if(gacriVivos == 0){
+                
                 nivel++;
+                for(i=0;i<nivel,i++){
+                    clearInterval(efectoMau[i]);
+                }
+                
                 setTimeout(pantalla,1500);
             }
 
@@ -233,7 +240,7 @@ function gatera(){
         if (cuantas == 2){
             $("#cat"+i).addClass("dosVidas");
         }
-        efectoMau[i] = setInterval(catBounce,1000);
+        efectoMau[i] = setInterval(catBounce(i),1000);
     }
     
     var ancho = 84;
@@ -281,7 +288,7 @@ function lluevenMacris(){
     
 }
 
-function catBounce(){
+function catBounce(elemento){
     marginFirst -= penalidad;
     $("#efectos .efecto:nth-of-type(3)").css("margin-left",marginFirst + "%");
     pueblo++;
