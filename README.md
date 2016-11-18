@@ -7,5 +7,5 @@ Jugá a atrapar todos los macrigatos antes de que se arruine el país
 Has click en los macrigatos para sopapearlos. Listo, eso es todo.
 
 # Créditos
-Hecho por [EyPacha!][https://github.com/eypacha].
-Más ifo en [macrigato.com.ar][https://macrigato.com.ar].
+Hecho por [EyPacha!](https://github.com/eypacha).
+Más ifo en [macrigato.com.ar](https://macrigato.com.ar).
