@@ -1,0 +1,146 @@
+<!doctype html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><html lang="en" class="no-js"> <![endif]-->
+<html lang="en">
+
+<head>
+<audio id="cats_audio" preload="auto">
+     <source id="mp3_src" src="sound-sprites.mp3" type="audio/mpeg">
+</audio>
+  <!-- Basic -->
+  <title>MacriCat Go!</title>
+
+  <!-- Define Charset -->
+  <meta charset="utf-8">
+
+  <!-- Responsive Metatag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Page Description and Author -->
+  <meta name="description" content="Juega atrapar el gato antes de que arruine el país.">
+  <meta name="author" content="Ey Pacha!">
+  <!-- Color CSS Styles  -->
+  <link rel="stylesheet" type="text/css" href="style.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css"/>
+  <!-- JS  -->
+  <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+
+    <link href="../icon48.png" type="image/png" rel="icon" />
+
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="MacriCat Go!" />
+    <meta property="og:description" content="Juega a atrapar los macrigatos antes de que arruine el país." />
+    <meta property="og:url" content="http://macrigato.com.ar/macricatgo" />
+    <meta property="og:site_name" content="MacriGato" />
+    <meta property="fb:app_id" content="357514884387882" />
+    <meta property="og:image" content="http://macrigato.com.ar/macricatgo/prev_og_image.jpg" />
+  <!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+
+ <body>
+<audio id="loop8bits" src="loop80kbps.mp3" loop></audio>
+    <div id="jugar">
+       <div id="caja">
+          <div id="home">
+            <img src="logo.png">
+            <h1>MacriCat Go!</h1>
+            <p>¡Atrapalos antes de que<br>se arruine el país!</p>
+            <div id="empezar" class="btn click">Jugar</div>
+          </div>
+          <div id="pantalla">
+             <div id="nivel1" class="nivel">
+                <h3>El juego</h3>
+                <p>En un mundo paralelo llueven Macrigatos saltarines. Atrápalos sopapéandolos sobre ellos.</p>
+                 <div id="catTut1" class="avatar click" onMouseUp='macriHit("Tut1")' data-vidas="1"></div>
+                <i class="fa fa-check fa-3x"></i>
+             </div>
+             <div id="nivel2" class="nivel">
+                <h3>¡Felicitaciones!</h3>
+                <p>Has superado el primer nivel.<br>¿Muy fácil? el problema de los Macrigatos es que se multiplican.<br>Veamos si puedes con dos...</p>
+             </div>
+             <div id="nivel3" class="nivel">
+                <h3>La cosa se complica</h3>
+                <p>Cada vez que un Macrigato toca la tierra hace avanzar una de sus medidas y aumenta la deuda estatal. No pierdas el tiempo, cada segundo es vital.</p>
+                <img src="nivel3.jpg" width="100%">
+             </div>
+             <div id="nivel4" class="nivel">
+                <h3>Aparecen los refuerzos</h3>
+                <p>Los macrigatos tienes aliados que intentarán protegerlos. Intenta no tocarlos, nunca se sabe lo que pueden decir.</p>
+                <img src="carrio.png" width="100%">
+             </div>
+             <div id="nivel5" class="nivel">
+                <h3>Los gatos tienen varias vidas</h3>
+                <p>Algunos macrigatos son mas duros que otros. Sopapéalos varias veces si es necesario.</p>
+                <div class="dosVidas">
+                 <div id="catTut2" class="avatar click" onMouseUp='macriHit("Tut2")' data-vidas="2"></div>
+                 </div>
+                <i class="fa fa-check fa-3x"></i>
+             </div>
+             <div id="nivel6" class="nivel">
+                <h3>Globolución de la alegría</h3>
+                <p>¡Claro que sí! Y para complicarla también hay globos!.</p>
+                 <div id="globoTut" class="globo click" onMouseUp='globoHit("")'></div>
+                <i class="fa fa-check fa-3x"></i>
+             </div>
+             <div id="nivel7" class="nivel">
+                <h3>Game Over</h3>
+                <p>Tu puntuación final fue de:</p>
+                <p class="cajita">
+                    <big><big><b>U$D<span id="puntaje1"></span></b></big></big><br>mil millones de deuda estatal<br>
+                    <big><big><b><span id="puntaje2"></span></b></big></big><br> Trabajadores despididos
+                </p>
+                        
+                       <p><a href="http://www.facebook.com/sharer.php?u=http://macrigato.com.ar/macricatgo" target="_blank" class="btn"><i class="fa fa-facebook"></i></a>
+                        
+					   <a href="http://twitter.com/share?url=http%3A%2F%2Fbit.ly%2F2g0JSvI&text=Juega%20a%20atrapar%20los%20Macrigatso%20antes%20de%20que%20sea%20tarde&hashtags=macrigato%2Cmacri%2Cgato" target="_blank" class="btn"><i class="fa fa-twitter"></i></a>
+              </p>
+               
+             </div>
+             <div class="btnJugar btn click">Jugar</div>
+          </div>
+       </div>
+    </div>
+
+    <div id='carrioDos' class="carrio click"></div>
+    <div id='carrioUna' class="carrio click"></div>
+    <div id='duran'></div>
+    <div id="bolsadegatos"></div>
+    <div id="fondo"></div>
+    <div id="nivel">Nivel 1</div>
+    <div id="globos">
+    
+    </div>
+<footer>
+
+   <div id="efectos">
+      <div id="boca"></div> 
+      <div id="pueblo">
+      <p>Deuda estatal:<b><br>$USD<span>0</span> mil millones</b></p>
+      <p>Trabajadores despedidos:<b><br><span>0</span></b></p>
+      </div>
+       <div class="efecto"><p><i class="fa fa-balance-scale fa-3x"></i><br>Se ordena destruir 60 mil cunas para bebés</p></div>
+       <div class="efecto"><p><i class="fa fa-balance-scale fa-3x"></i><br>Suaviza las condenas de 50 militares genocidas</p></div>
+
+    <div class="efecto"><p><i class="fa fa-flask fa-3x"></i><br><small><small>50% de recorte al presupuesto</small></small><br/>Ciencia y Tecnología</div>
+    <div class="efecto"><p><i class="fa fa-money fa-3x"></i><br>Eliminación de retenciones al sector agropecuario</p></div>
+    <div class="efecto"><p><i class="fa fa-money fa-3x"></i><br>Imputación a Hebe de Bonafini por "incitación a la violencia colectiva</p></div>
+    <div class="efecto"><p><i class="fa fa-money fa-3x"></i><br>Eliminación de retenciones a la minería</p></div>
+    <div class="efecto"><p><i class="fa fa-line-chart fa-3x"></i><br>Suba de las tasas de interés</p></div>
+    <div class="efecto"><p><i class="fa fa-dollar fa-3x"></i><i class="fa fa-euro fa-3x"></i><br>Eliminación del cepo cambiario</p></div>
+    <div class="efecto"><p><i class="fa fa-balance-scale fa-3x"></i><br>Eliminación de las DJAI</p></div>
+   <div class="efecto"><p><i class="fa fa-dollar fa-3x"></i><br>Refuerzo de la posición de reservas</p></div>
+   <div class="efecto"><p><i class="fa fa-car fa-3x"></i><br>Baja de alícuotas de impuestos distorsivos</p></div>
+   
+    
+
+   </div>
+    <p align="right"><a href="http://macrigato.com.ar">macrigato.com.ar</a></p>
+</footer>
+<script type="text/javascript" src="howler.min.js"></script>
+<script type="text/javascript" src="hit-the-cats.min.js"></script>
+</body>
+
+</html>
