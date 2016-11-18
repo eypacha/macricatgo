@@ -4,7 +4,7 @@ html,body {
   height: 100%;
   overflow: hidden;
   font-family: 'Open Sans', sans-serif;
-  cursor: url(plug-n0.png) 32 32, pointer;
+  cursor: url(../img/plug-n0.png) 32 32, pointer;
 }
 
 a, img {
@@ -16,7 +16,7 @@ a, img {
     -ms-user-select: none;
 }
 #duran {
-    background-image: url(duran.png);
+    background-image: url(../img/duran.png);
     width: 300px;
     height: 206px;
     background-size: cover;
@@ -41,7 +41,7 @@ a, img {
 .globo {
     width: 100px;
     height: 120px;
-    background-image: url("globo.png");
+    background-image: url(../img/globo.png);
     background-size: cover;
     border-radius: 100%;
     -moz-border-radius: 100;
@@ -54,11 +54,11 @@ a, img {
     left: calc(50% - 50px);
 }
 a:hover, .click:hover{
-    cursor: url(plug-n1.png) 32 32, pointer;
+    cursor: url(../img/plug-n1.png) 32 32, pointer;
 }
 
 a:active, .click:active{
-    cursor: url(plug-n2.png) 32 32, pointer;
+    cursor: url(../img/plug-n2.png) 32 32, pointer;
 }
 .x1 {
     left: 50%;
@@ -176,12 +176,12 @@ a:active, .click:active{
     height: 25px;
     font-size: 16pt;
     text-align: right;
-    background-image: url("m.png");
+    background-image: url(../img/m.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
     padding-right: 26px;
-    cursor: url(plug-n0.png) 32 32, pointer;
+    cursor: url(../img/plug-n0.png) 32 32, pointer;
 }
 .gato {
   position:absolute;
@@ -276,7 +276,7 @@ footer a:hover {
   animation-play-state: running;
 }
 .avatar {
-  background: url("gacri1.png") no-repeat center center;
+  background: url(../img/gacri1.png) no-repeat center center;
   background-size: cover;
   border-radius: 15px 15px 100% 100%;
   height: 74px;
@@ -286,7 +286,7 @@ footer a:hover {
   margin-left: -25px;
 }
 .dosVidas .avatar {
- background: url("gacri2.png") no-repeat center center;
+ background: url(../img/gacri2.png) no-repeat center center;
  background-size: cover;
 }
 .flip {
@@ -432,7 +432,7 @@ footer a:hover {
     background-image: linear-gradient(to bottom,#ffcd00 0,#c88a01 100%);
     text-shadow: 1px 1px 5px #c88a01;
     transition: all 300ms;
-    cursor: url(plug-n0.png) 32 32, pointer;
+    cursor: url(../img/plug-n0.png) 32 32, pointer;
     overflow: hidden;
 }
 #efectos .efecto:nth-of-type(3){
@@ -447,7 +447,7 @@ footer a:hover {
     font-size: 12pt;
     position: absolute;
     text-align: center;
-    cursor: url(plug-n0.png) 32 32, pointer;
+    cursor: url(../img/plug-n0.png) 32 32, pointer;
     -webkit-box-shadow: inset 0px 0px 10px 4px rgba(0,0,0,0.4);
     -moz-box-shadow: inset 0px 0px 10px 4px rgba(0,0,0,0.4);
     box-shadow: inset 0px 0px 10px 4px rgba(0,0,0,0.4);
@@ -468,7 +468,7 @@ footer a:hover {
 .carrio {
     width: 395px;
     height: 160px;
-    background-image: url(carrio.png);
+    background-image: url(../img/carrio.png);
     z-index: 9999;
     position: absolute;
     transition: all 1500ms;

@@ -296,7 +296,7 @@ function catBounce(){
 
 function cargarSonidos(){
 maullador = new Howl({
-  urls: ['sound-sprites.mp3'],
+  urls: ['audio/sound-sprites.mp3'],
   sprite: {
     'mau0': [1000, 900],
     'mau1': [0965, 1000],
