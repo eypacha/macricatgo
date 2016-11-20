@@ -51,6 +51,22 @@ a, img {
     opacity: 0.9;
     z-index: 999999999;
 }
+#barraVida {
+    border: solid 1pt white;
+    width: calc(100% - 20px);
+    height: 8px;
+    position: fixed;
+    top: 10px;
+    border-radius: 5px;
+    display: none;
+}
+#barraVida .valor {
+    background-color: rgba(255, 205, 0,0.9);
+    width: 100%;
+    height: 100%;
+    transition: all 600ms;
+    border-radius: 5px;
+}
 #globoTut {
     left: calc(50% - 50px);
 }
@@ -172,7 +188,7 @@ a:active, .click:active{
 #nivel {
     position: absolute;
     right: 30px;
-    top: 20px;
+    top: 30px;
     width: 100px;
     height: 25px;
     font-size: 16pt;
@@ -234,6 +250,9 @@ footer a:hover {
 #bolsadegatos{
     width: 100%;
     height: 100%;
+}
+#bolsadegatos:active{
+    cursor: url(../img/plug-n2.png) 32 32, pointer !important;
 }
 .m2{
     margin-left: 127px;
@@ -308,7 +327,7 @@ footer a:hover {
     width: 100%;
     height: 100%;
     z-index: 9999999999;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.4);
     }
 .btn {
     color: black; 
@@ -328,8 +347,10 @@ footer a:hover {
     bottom: 10px;
     margin: 0 0 0 -50px;
 }
-
-#nivel7 .btn {
+#jugarOtraVez {
+    width: 150px;
+}
+#nivel9 .btn {
     left: 0 !important;
     position: relative !important;
     bottom: 0 !important;
@@ -365,10 +386,10 @@ footer a:hover {
 #caja {
     position:absolute;
     background-color: #ffcd00;
-    top: calc(50% - 150px);
+    top: calc(50% - 220px);
     left: calc(50% - 150px);
     width: 300px;
-    height: 300px;
+    min-height: 300px;
     border: solid 3px #ddaa00;
     border-radius: 10px;
     text-align: center;

@@ -48,13 +48,13 @@
             <img src="img/logo.png">
             <h1>MacriCat Go!</h1>
             <p>¡Atrapalos antes de que<br>se arruine el país!</p>
-            <div id="empezar" class="btn click">Jugar</div>
+            <div id="empezar" class="btn click sqek">Jugar</div>
           </div>
           <div id="pantalla">
              <div id="nivel1" class="nivel">
                 <h3>El juego</h3>
                 <p>En un mundo paralelo llueven Macrigatos saltarines. Atrápalos sopapéandolos sobre ellos.</p>
-                 <div id="catTut1" class="avatar click" onMouseUp='macriHit("Tut1")' data-vidas="1"></div>
+                 <div id="catTut1" class="avatar click sqek" onMouseUp='macriHit("Tut1")' data-vidas="1"></div>
                 <i class="fa fa-check fa-3x"></i>
              </div>
              <div id="nivel2" class="nivel">
@@ -75,17 +75,27 @@
                 <h3>Los gatos tienen varias vidas</h3>
                 <p>Algunos macrigatos son mas duros que otros. Sopapéalos varias veces si es necesario.</p>
                 <div class="dosVidas">
-                 <div id="catTut2" class="avatar click" onMouseUp='macriHit("Tut2")' data-vidas="2"></div>
+                 <div id="catTut2" class="avatar click sqek" onMouseUp='macriHit("Tut2")' data-vidas="2"></div>
                  </div>
                 <i class="fa fa-check fa-3x"></i>
              </div>
              <div id="nivel6" class="nivel">
-                <h3>Globolución de la alegría</h3>
-                <p>¡Claro que sí! Y para complicarla también hay globos!.</p>
-                 <div id="globoTut" class="globo click" onMouseUp='globoHit("")'></div>
+                <h3>La curiosidad no mata al gato</h3>
+                <p>Y para colmo algunos reviven. Sigue atrapándolos hasta que no lluevan más.</p>
                 <i class="fa fa-check fa-3x"></i>
              </div>
              <div id="nivel7" class="nivel">
+                <h3>Globolución de la alegría</h3>
+                <p>¡Claro que sí! Y para complicarla también hay globos!</p>
+                 <div id="globoTut" class="globo click" onMouseUp='globoHit("")'></div>
+                <i class="fa fa-check fa-3x"></i>
+             </div>
+             <div id="nivel8" class="nivel">
+                <h3>Los piropos de Mauuuu</h3>
+                <p>A todas las mujeres les gusta que les digan un piropo, como "qué lindo culo que tenés"... incluso a Carrió</p>
+                <i class="fa fa-check fa-3x"></i>
+             </div>
+             <div id="nivel9" class="nivel">
                 <h3>Game Over</h3>
                 <p>Tu puntuación final fue de:</p>
                 <p class="cajita">
@@ -93,38 +103,41 @@
                     <big><big><b><span id="puntaje2"></span></b></big></big><br> Trabajadores despididos
                 </p>
                         
-                       <p><a href="http://www.facebook.com/sharer.php?u=http://macrigato.com.ar/macricatgo" target="_blank" class="btn"><i class="fa fa-facebook"></i></a>
+                       <p><a href="http://www.facebook.com/sharer.php?u=http://macrigato.com.ar/macricatgo" target="_blank" class="btn sqek"><i class="fa fa-facebook"></i></a>
                         
-					   <a href="http://twitter.com/share?url=http%3A%2F%2Fbit.ly%2F2g0JSvI&text=Juega%20a%20atrapar%20los%20Macrigatso%20antes%20de%20que%20sea%20tarde&hashtags=macrigato%2Cmacri%2Cgato" target="_blank" class="btn"><i class="fa fa-twitter"></i></a>
+					   <a href="http://twitter.com/share?url=http%3A%2F%2Fbit.ly%2F2g0JSvI&text=Juega%20a%20atrapar%20los%20Macrigatso%20antes%20de%20que%20sea%20tarde&hashtags=macrigato%2Cmacri%2Cgato" target="_blank" class="btn sqek"><i class="fa fa-twitter"></i></a>
+                         <br>
+                       <div class="btn sqek" id="jugarOtraVez">Jugar otra vez</div>
               </p>
                
              </div>
-             <div class="btnJugar btn click">Jugar</div>
+             <div class="btnJugar btn click sqek">Jugar</div>
           </div>
        </div>
     </div>
 
-    <div id='carrioDos' class="carrio click"></div>
-    <div id='carrioUna' class="carrio click"></div>
+    <div id='carrioDos' class="sqek carrio click"></div>
+    <div id='carrioUna' class="sqek carrio click"></div>
     <div id='duran'></div>
-    <div id="bolsadegatos"></div>
+    <div id="bolsadegatos" class="sqek"></div>
     <div id="fondo"></div>
     <div id="nivel">Nivel 1</div>
     <div id="globos">
     
     </div>
 <footer>
-
+<div id="barraVida"><div class="valor"></div></div>
    <div id="efectos">
       <div id="boca"></div> 
       <div id="pueblo">
       <p>Deuda estatal:<b><br>$USD<span>0</span> mil millones</b></p>
       <p>Trabajadores despedidos:<b><br><span>0</span></b></p>
       </div>
+      <div class="efecto"><p><i class="fa fa-flask fa-3x"></i><br><small>Se recorta $14mil millones al presupuesto de Ciencia y Tecnología</small></div>
+      <div class="efecto"><p><i class="fa fa-flash fa-3x"></i><br><small>Se perdona $19mil millones<br>a las empresas eléctricas</small></div>
+      <div class="efecto"><p><i class="fa fa-glass fa-3x"></i><br>Champagne libre de impuestos</div>
        <div class="efecto"><p><i class="fa fa-balance-scale fa-3x"></i><br>Se ordena destruir 60 mil cunas para bebés</p></div>
        <div class="efecto"><p><i class="fa fa-balance-scale fa-3x"></i><br>Suaviza las condenas de 50 militares genocidas</p></div>
-
-    <div class="efecto"><p><i class="fa fa-flask fa-3x"></i><br><small><small>50% de recorte al presupuesto</small></small><br/>Ciencia y Tecnología</div>
     <div class="efecto"><p><i class="fa fa-money fa-3x"></i><br>Eliminación de retenciones al sector agropecuario</p></div>
     <div class="efecto"><p><i class="fa fa-money fa-3x"></i><br>Imputación a Hebe de Bonafini por "incitación a la violencia colectiva</p></div>
     <div class="efecto"><p><i class="fa fa-money fa-3x"></i><br>Eliminación de retenciones a la minería</p></div>
@@ -132,7 +145,7 @@
     <div class="efecto"><p><i class="fa fa-dollar fa-3x"></i><i class="fa fa-euro fa-3x"></i><br>Eliminación del cepo cambiario</p></div>
     <div class="efecto"><p><i class="fa fa-balance-scale fa-3x"></i><br>Eliminación de las DJAI</p></div>
    <div class="efecto"><p><i class="fa fa-dollar fa-3x"></i><br>Refuerzo de la posición de reservas</p></div>
-   <div class="efecto"><p><i class="fa fa-car fa-3x"></i><br>Baja de alícuotas de impuestos distorsivos</p></div>
+   <div class="efecto"><p><i class="fa fa-car fa-3x"></i><br>Baja de los impuestos a los autos de alta gama</p></div>
    
     
 
@@ -141,6 +154,16 @@
 </footer>
 <script type="text/javascript" src="js/howler.min.js"></script>
 <script type="text/javascript" src="js/hit-the-cats.min.js"></script>
+ <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-86486698-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 </body>
 
 </html>
