@@ -1,8 +1,7 @@
-
 var puntaje = 0;
 var nivel = 1;
-var meow = document.getElementById("cats_audio"); 
 var meow_i = 0; 
+var musica;
 var posicion = [900,1100,1200]; // Sprites sonoros
 var clima; // Llueven gatos
 var lista = []; // Orden de nacimiento gatuno
@@ -26,7 +25,6 @@ $(".btnJugar").on( "click" , jugar );
 $(".carrio").on( "click" , carrioHit );
 $("#jugarOtraVez").on( "click" , juegoNuevo );
 
-cargarSonidos();
 
 function sonido1(){
     maullador.play("sqek");
@@ -45,9 +43,6 @@ if (window.sidebar){
 document.onmousedown=disableselect
 document.onclick=reEnable
 }
-
-    musica = document.getElementById("loop8bits");
-    musica.volume = 0.5;
 
 function juegoNuevo(){
    location.reload();
@@ -379,22 +374,42 @@ function catBounce(){
 //      }
     
 }
+function cargarMusica(){
+    
+    $("#infoLoader div").html("CARGANDO MÚSICA...");
+    
+    musica = new Howl({
+        urls: ['audio/loop80kbps.mp3'],
+        loop: true,
+        volume: 0.5,
+        onload: cargarSonidos
+    })
+}
+
 
 function cargarSonidos(){
-maullador = new Howl({
-  urls: ['audio/sound-sprites.mp3'],
-  sprite: {
-    'mau0': [1000, 900],
-    'mau1': [0965, 1000],
-    'mau2': [2077, 1000],
-    'sqek': [4244, 250],
-    'sqak': [4500, 250],
-    'pop': [4877, 250],
-    'elisa0': [5200, 1900],
-    'elisa1': [7300, 1450],
-    'elisa2': [8900, 1650]
-  }
-});
+
+    $("#infoLoader div").html("CARGANDO FX...");
+
+    maullador = new Howl({
+      urls: ['audio/sound-sprites.mp3'],
+      sprite: {
+        'mau0': [1000, 900],
+        'mau1': [0965, 1000],
+        'mau2': [2077, 1000],
+        'sqek': [4244, 250],
+        'sqak': [4500, 250],
+        'pop': [4877, 250],
+        'elisa0': [5200, 1900],
+        'elisa1': [7300, 1450],
+        'elisa2': [8900, 1650]
+      },
+      onload: function() {
+        $("#infoLoader").css("display","none");
+        $("#caja").css("display","block");
+      }
+    });
     
 }
     
+cargarMusica();

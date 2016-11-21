@@ -4,9 +4,6 @@
 <html lang="en">
 
 <head>
-<audio id="cats_audio" preload="auto">
-     <source id="mp3_src" src="audio/sound-sprites.mp3" type="audio/mpeg">
-</audio>
   <!-- Basic -->
   <title>MacriCat Go!</title>
 
@@ -41,8 +38,12 @@
 </head>
 
  <body>
+ 
 <audio id="loop8bits" src="audio/loop80kbps.mp3" loop></audio>
     <div id="jugar">
+      <div id="infoLoader"><a class="fa fa-spinner fa-spin fa-3x"></a>
+      <div></div>
+      </div>
        <div id="caja">
           <div id="home">
             <img src="img/logo.png">
@@ -103,13 +104,12 @@
                     <big><big><b><span id="puntaje2"></span></b></big></big><br> Trabajadores despididos
                 </p>
                         
-                       <p><a href="http://www.facebook.com/sharer.php?u=http://macrigato.com.ar/macricatgo" target="_blank" class="btn sqek"><i class="fa fa-facebook"></i></a>
-                        
-					   <a href="http://twitter.com/share?url=http%3A%2F%2Fbit.ly%2F2g0JSvI&text=Juega%20a%20atrapar%20los%20Macrigatso%20antes%20de%20que%20sea%20tarde&hashtags=macrigato%2Cmacri%2Cgato" target="_blank" class="btn sqek"><i class="fa fa-twitter"></i></a>
-                         <br>
+               <p>
+                   <a href="http://www.facebook.com/sharer.php?u=http://macrigato.com.ar/macricatgo" target="_blank" class="btn sqek"><i class="fa fa-facebook"></i></a>
+
+                   <a href="http://twitter.com/share?url=http%3A%2F%2Fbit.ly%2F2g0JSvI&text=Juega%20a%20atrapar%20los%20Macrigatso%20antes%20de%20que%20sea%20tarde&hashtags=macrigato%2Cmacri%2Cgato" target="_blank" class="btn sqek"><i class="fa fa-twitter"></i></a>
+                 </p>
                        <div class="btn sqek" id="jugarOtraVez">Jugar otra vez</div>
-              </p>
-               
              </div>
              <div class="btnJugar btn click sqek">Jugar</div>
           </div>

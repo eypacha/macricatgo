@@ -342,10 +342,13 @@ footer a:hover {
     height: 40px;
     text-align: center;
     line-height: 40px;
-    position: absolute;
     left: 50%;
-    bottom: 10px;
-    margin: 0 0 0 -50px;
+}
+.btnJugar, #empezar {
+    position: relative;
+    margin-left: -50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 #jugarOtraVez {
     width: 150px;
@@ -357,8 +360,11 @@ footer a:hover {
     margin-left: 0 !important;
     display: inline-block;
     vertical-align: middle !important;
-    margin: 0 !important;
+    margin-bottom: 10px;
     
+}
+#catTut1, #catTut2, #globoTut {
+    position: relative !important;
 }
 .floor {
     width: 80px;
@@ -383,16 +389,32 @@ footer a:hover {
     border-top: solid 4px #c88a01;
     border-bottom: 0px;
 }
+#infoLoader{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height: 80px;
+    text-align: center;
+    margin-left: -150px;
+    margin-top: -40px;
+    color:white;
+    padding: 10px;
+}
+#infoLoader div {
+    margin-top: 10px;
+}
 #caja {
     position:absolute;
     background-color: #ffcd00;
     top: calc(50% - 220px);
     left: calc(50% - 150px);
     width: 300px;
-    min-height: 300px;
+    min-height: 200px;
     border: solid 3px #ddaa00;
     border-radius: 10px;
     text-align: center;
+    display:none;
     
 }
 #home img {
