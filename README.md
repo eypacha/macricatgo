@@ -30,6 +30,7 @@ Has click en los macrigatos para sopapearlos. Listo, eso es todo.
 * Sin Censura. [Te presentamos "MacriGatGo" El minijuego que hace furor en las redes](http://sincensura.com.ar/2016/11/22/presentamos-macricatgo-minijuego/). 22/11/2016.
 * Nova [Un insólito juego sobre Macri es furor en las redes sociales](http://www.novargentina.com/nota.asp?n=2016_11_23&id=45605&id_tiponota=4). 23/16/2016.
 * Diario Primera Línea [#MacriGato](http://www.diarioprimeralinea.com.ar/quebrachitos/2016/11/23/macrigato-35479.html). 23/11/2016.
+* Infonews [Macri Cat Go: un desopilante videojuego que es furor en la web](http://www.infonews.com/nota/303918/macri-cat-go-un-desopilante-videojuego). 24/11/2016.
 
 **Redes sociales**
 * En Taringa! [Conoce el juego MacriCat Go](http://www.taringa.net/posts/juegos/19666721/Conoce-el-juego-Macri-Cat-Go.html). 22/11/2016.
