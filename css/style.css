@@ -193,13 +193,16 @@ a:active, .click:active{
     height: 25px;
     font-size: 16pt;
     text-align: right;
-    background-image: url(../img/m.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    padding-right: 26px;
-    cursor: url(../img/plug-n0.png) 32 32, pointer;
     display: none;
+    color: #b1411c;
+}
+#moneda {
+    width: 25px;
+    height: 25px;
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 5px;
+    background-image: url("../img/comida25.png");
 }
 .gato {
   position:absolute;
@@ -295,6 +298,23 @@ footer a:hover {
   transform-origin: center bottom;
   animation-play-state: running;
 }
+.coin {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background-image: url("../img/comida25.png");
+}
+.blinker {
+  animation-name: blinker;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name:blinker;
+  -webkit-animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
 .avatar {
   background: url(../img/gacri1.png) no-repeat center center;
   background-size: cover;
@@ -344,9 +364,8 @@ footer a:hover {
     line-height: 40px;
     left: 50%;
 }
-.btnJugar, #empezar {
-    position: relative;
-    margin-left: -50px;
+.btn-inline, #empezar {
+    display: inline-block;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -530,7 +549,19 @@ footer a:hover {
     filter: FlipH;
     -ms-filter: "FlipH";
 }
+.footer-item.left {
+    float: left;
+    color: grey;
+}
 
+.footer-item.left a{
+    text-decoration: none;
+}
+
+
+.footer-item.right {
+    float: right;
+}
 @keyframes the-forbidden-dance {
   0% {
     transform: translate3d(0, -180px, 0) scaleY(1);
@@ -585,4 +616,22 @@ footer a:hover {
     opacity: 1;
     transform: scaleX(1.15) scaleY(0.1);
   }
+}
+
+@-moz-keyframes blinker {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
 }

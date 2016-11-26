@@ -28,7 +28,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="MacriCat Go!" />
     <meta property="og:description" content="Juega a atrapar los macrigatos antes de que arruine el país." />
-    <meta property="og:url" content="http://macrigato.com.ar/macricatgo" />
+    <meta property="og:url" content="http://macrigato.com.ar/macricatgo/" />
     <meta property="og:site_name" content="MacriGato" />
     <meta property="fb:app_id" content="357514884387882" />
     <meta property="og:image" content="http://macrigato.com.ar/macricatgo/img/prev_og_image.jpg" />
@@ -54,7 +54,7 @@
           <div id="pantalla">
              <div id="nivel1" class="nivel">
                 <h3>El juego</h3>
-                <p>En un mundo paralelo llueven Macrigatos saltarines. Atrápalos sopapéandolos sobre ellos.</p>
+                <p>En un mundo paralelo llueven Macrigatos saltarines. Atrápalos sopapeando sobre ellos.</p>
                  <div id="catTut1" class="avatar click sqek" onMouseUp='macriHit("Tut1")' data-vidas="1"></div>
                 <i class="fa fa-check fa-3x"></i>
              </div>
@@ -81,7 +81,7 @@
                 <i class="fa fa-check fa-3x"></i>
              </div>
              <div id="nivel6" class="nivel">
-                <h3>La curiosidad no mata al gato</h3>
+                <h3>La curiosidad no mata al perro</h3>
                 <p>Y para colmo algunos reviven. Sigue atrapándolos hasta que no lluevan más.</p>
                 <i class="fa fa-check fa-3x"></i>
              </div>
@@ -101,17 +101,20 @@
                 <p>Tu puntuación final fue de:</p>
                 <p class="cajita">
                     <big><big><b>U$D<span id="puntaje1"></span></b></big></big><br>mil millones de deuda estatal<br>
-                    <big><big><b><span id="puntaje2"></span></b></big></big><br> Trabajadores despididos
+                    <big><big><b><span id="puntaje2"></span></b></big></big><br> Trabajadores despedidos
                 </p>
                         
                <p>
                    <a href="http://www.facebook.com/sharer.php?u=http://macrigato.com.ar/macricatgo" target="_blank" class="btn sqek"><i class="fa fa-facebook"></i></a>
 
-                   <a href="http://twitter.com/share?url=http%3A%2F%2Fbit.ly%2F2g0JSvI&text=Juega%20a%20atrapar%20los%20Macrigatso%20antes%20de%20que%20sea%20tarde&hashtags=macrigato%2Cmacri%2Cgato" target="_blank" class="btn sqek"><i class="fa fa-twitter"></i></a>
+                   <a href="http://twitter.com/share?url=http%3A%2F%2Fbit.ly%2F2g0JSvI&text=Juega%20a%20atrapar%20los%20Macrigatos%20antes%20de%20que%20sea%20tarde&via=macrigatismo&hashtags=MacriGato" target="_blank" class="btn sqek"><i class="fa fa-twitter"></i></a>
                  </p>
                        <div class="btn sqek" id="jugarOtraVez">Jugar otra vez</div>
              </div>
-             <div class="btnJugar btn click sqek">Jugar</div>
+             <div>
+                 <span id="btnTienda" class="btn-inline btn click sqek">Tienda</span>
+                 <span id="btnJugar" class="btn btn-inline click sqek">Jugar</span>
+             </div>
           </div>
        </div>
     </div>
@@ -119,12 +122,17 @@
     <div id='carrioDos' class="sqek carrio click"></div>
     <div id='carrioUna' class="sqek carrio click"></div>
     <div id='duran'></div>
-    <div id="bolsadegatos" class="sqek"></div>
+    <div id="bolsadegatos" class="sqek">
+        <div id="coin12" class="coin">10</div>
+    </div>
     <div id="fondo"></div>
-    <div id="nivel">Nivel 1</div>
+    <div id="nivel">
+        <div id="coins"><span id="cant">0</span><div id="moneda"></div></div>
+    </div>
     <div id="globos">
     
     </div>
+    
 <footer>
 <div id="barraVida"><div class="valor"></div></div>
    <div id="efectos">
@@ -150,10 +158,20 @@
     
 
    </div>
-    <p align="right"><a href="http://macrigato.com.ar">macrigato.com.ar</a></p>
+   <div class="alpie">
+    <span class="footer-item right"><a href="http://macrigato.com.ar">macrigato.com.ar</a></span>
+<!--
+    <span class="footer-item left">
+        <i class="fa fa-users"></i> ¡Te podés sumar! <a href="https://github.com/eypacha/macricatgo">
+        <i class="fa fa-github"></i> Sos programador?</a> <a href="mailto:info@macrigato.com.ar">
+        <i class="fa fa-music"></i> Hacés música?</a></span>
+-->
+  
+   </div>
 </footer>
 <script type="text/javascript" src="js/howler.min.js"></script>
 <script type="text/javascript" src="js/hit-the-cats.min.js"></script>
+
  <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -164,6 +182,7 @@
       ga('send', 'pageview');
 
     </script>
+
 </body>
 
 </html>

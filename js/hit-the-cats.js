@@ -2,7 +2,6 @@ var puntaje = 0;
 var nivel = 1;
 var meow_i = 0; 
 var musica;
-var posicion = [900,1100,1200]; // Sprites sonoros
 var clima; // Llueven gatos
 var lista = []; // Orden de nacimiento gatuno
 var efectoMau = []; 
@@ -18,10 +17,12 @@ var barraVida = 100;
 var danio = 4;
 var bonificacion = 10;
 var eliNum = 0;
+var monedas = 0;
+var sopX, sopY;
 $("#empezar").on( "click" , empezar );
 $(".sqek").on( "mousedown" , sonido1 );
 $(".sqek").on( "mouseup" , sonido2 );
-$(".btnJugar").on( "click" , jugar );
+$("#btnJugar").on( "click" , jugar );
 $(".carrio").on( "click" , carrioHit );
 $("#jugarOtraVez").on( "click" , juegoNuevo );
 
@@ -32,6 +33,8 @@ function sonido1(){
 function sonido2(){
     maullador.play("sqak");
 }
+
+// No permitir seleccionar
 function disableselect(e){
 return false
 }
@@ -43,6 +46,11 @@ if (window.sidebar){
 document.onmousedown=disableselect
 document.onclick=reEnable
 }
+
+$(document).mousemove(function(event){
+    sopX = event.pageX;
+    sopY = event.pageY;
+  });
 
 function juegoNuevo(){
    location.reload();
@@ -57,7 +65,6 @@ function jugar(){
     
     $("#jugar").addClass("bye");
     $("html").css("background-color","#ffcd00");
-    $("#nivel").html("Nivel " + nivel);
     
     gatera();
   
@@ -122,7 +129,8 @@ function pantalla(){
         $("#nivel"+9).css("display","block");
         $("#puntaje1").html($("#pueblo p:nth-of-type(1) span").html())
         $("#puntaje2").html($("#pueblo p:nth-of-type(2) span").html())
-        $(".btnJugar").remove();
+        $("#btnJugar").remove();
+        $("#btnTienda").remove();
         
     }else{
         barraVida = 100;
@@ -144,6 +152,9 @@ function macriHit(elemento){
     if($("#cat"+elemento).hasClass("real")){
         
         if (vidas == 0){
+            // Libera monedas
+            dropCoins(sopX,sopY);
+                        
             $("#cat"+elemento).addClass("bye");
             
             // Maullido
@@ -342,16 +353,24 @@ function lluevenMacris(){
         $("#floor"+llovio).css("left", $("#cat"+llovio).css("left"));
         
         efectoMau[llovio] = setInterval(catBounce,1000);
-        console.debug(llovio); 
         llovio++;
     } else {
         clearInterval(clima);
     }
     
-       
-    
 }
 
+function dropCoins(a,b){
+    var coinId = Math.round(Math.random()*100000);
+    $("#bolsadegatos").append('<div id="coin'+coinId+'" class="coin blinker"></div>');
+    $("#coin"+coinId).css("left",a+"px");
+    $("#coin"+coinId).css("top",b+"px");
+    
+    setTimeout(function(){$("#coin"+coinId).remove()},1000);
+    monedas++;
+    $("#cant").html(monedas);
+    
+}
 function catBounce(){
     marginFirst -= penalidad;
     $("#efectos .efecto:nth-of-type(3)").css("margin-left",marginFirst + "%");
@@ -382,7 +401,10 @@ function cargarMusica(){
         urls: ['audio/loop80kbps.mp3'],
         loop: true,
         volume: 0.5,
-        onload: cargarSonidos
+        onload: cargarSonidos,
+        onrate: function(){
+          console.debug("cambiooooo" + musica.rate)
+      } 
     })
 }
 
@@ -411,5 +433,5 @@ function cargarSonidos(){
     });
     
 }
-    
+  
 cargarMusica();
