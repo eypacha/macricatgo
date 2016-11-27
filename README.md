@@ -12,6 +12,11 @@ Has click en los macrigatos para sopapearlos. Listo, eso es todo.
 * Hecho por [EyPacha!](https://github.com/eypacha).
 * Más info en [macrigato.com.ar](https://macrigato.com.ar).
 
+# Updates:
+
+**Versión 0.1.0** (lanzada el 26 de Noviembre de 2016)
+* ¡Ahora con comida para gatos!
+
 # Repercuciones mediáticas:
 
 **Programas de radio**
@@ -35,11 +40,13 @@ Catamarca Ya [Desopilante videojuego de #MacriGato](http://www.catamarcaya.com.a
 * Infonews [Macri Cat Go: un desopilante videojuego que es furor en la web](http://www.infonews.com/nota/303918/macri-cat-go-un-desopilante-videojuego). 24/11/2016.
 * Diario Registrado. [Furor por el 'MacriCat Go!', el videojuego donde tenés que atrapar 'Macri-gatos' saltarines](http://www.diarioregistrado.com/politica/furor-por-el--macricat-go----el-videojuego-donde-tenes-que-atrapar--macri-gatos--saltarines_a5837e3a99bfd993f295b275a). 25/11/2016.
 * Minuto de Cierre. [El "MacriCat Go!", videojuego donde se tienen que atrapar "Macri-gatos"](http://www.minutodecierre.com/nota/2016-11-25-el-macricat-go-el-videojuego-donde-tenes-que-atrapar-macri-gatos-saltarines). 25/11/2016.
+* Puntadas con hilo. [¿Acaso el juego del año? MacriCat Go!](https://puntadasconhilo.net/2016/11/27/acaso-juego-del-ano-macricat-go/). 27/11/2016.
 
 **Redes sociales**
 * En Taringa! [Conoce el juego MacriCat Go](http://www.taringa.net/posts/juegos/19666721/Conoce-el-juego-Macri-Cat-Go.html). 22/11/2016.
 * En Taringa! [Entra y juga al juego de "macri gato"](http://www.taringa.net/posts/juegos/19666604/Entra-y-juga-al-juego-de-macri-gato.html). 22/11/2016.
 * En Taringa! [Llegó el videojuego de #MacriGato: Macri Cat Go](http://www.taringa.net/posts/noticias/19666730/Llego-el-videojuego-de-MacriGato-Macri-Cat-Go.html). 23/11/2016.
+* En Taringa! [Furor por el MacriCatGo! Atrapá los 'Macri-gatos'](http://www.taringa.net/posts/juegos-online/19671480/Furor-por-el-MacriCatGo-Atrapa-los-Macri-gatos.html). 26/11/2016.
 * En Reddit. [Macri Gato Cat Go: Jugá a atrapar los macrigatos antes de que arruine el país](https://www.reddit.com/r/argentina/comments/5e5yul/macri_cat_go_jug%C3%A1_a_atrapar_los_macrigatos_antes/). 22/11/2016.
 * YouTube. [El bizarro videojuego de los macri gato saltarines](https://www.youtube.com/watch?v=4BHd7vJ8XQQ). 23/11/2016.
 * YouTube. [Macri gatos Go, atrapalos ya!!](https://www.youtube.com/watch?v=z8uiVJJegiA)
